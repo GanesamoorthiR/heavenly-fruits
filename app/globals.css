@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf6ec;
+  color: #26261f;
+}
+
+::selection {
+  background-color: #d9a441;
+  color: #1f3a28;
+}
+
+.container-px {
+  @apply px-5 sm:px-8 lg:px-12;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-semibold text-cream shadow-soft transition hover:bg-forest-light active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-honey px-6 py-3 text-sm font-semibold text-forest-dark shadow-soft transition hover:bg-honey-light active:scale-[0.98];
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-forest px-6 py-3 text-sm font-semibold text-forest transition hover:bg-forest hover:text-cream active:scale-[0.98];
+}
+
+.section-heading {
+  @apply font-serif text-3xl font-bold text-forest sm:text-4xl;
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-card;
+}
